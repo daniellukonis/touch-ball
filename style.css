@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+#canvas-container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#decrease-balls{
+    right: 0;
+}
+
+#increase-balls{
+    left: 0;
+}
+
+#decrease-size{
+    right: 0;
+    bottom: 0;
+}
+
+#increase-size{
+    left: 0;
+    bottom: 0;
+}
+
+.modify-buttons{
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    color: #00000075;
+    background-color: #99999950;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.modify-buttons p{
+    z-index: 2;
+}
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
